@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A02AACA320F184880007D4B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02AACA220F184880007D4B9 /* AppDelegate.swift */; };
+		A02AACA520F184880007D4B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A02AACA420F184880007D4B9 /* Assets.xcassets */; };
+		A02AACA820F184880007D4B9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A02AACA620F184880007D4B9 /* MainMenu.xib */; };
+		A02AACB420F184880007D4B9 /* Commenter_ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02AACB320F184880007D4B9 /* Commenter_ExtensionTests.swift */; };
+		A02AACBF20F184880007D4B9 /* Commenter_ExtensionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02AACBE20F184880007D4B9 /* Commenter_ExtensionUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A02AACB020F184880007D4B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A02AAC9720F184880007D4B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A02AAC9E20F184880007D4B9;
+			remoteInfo = "Commenter Extension";
+		};
+		A02AACBB20F184880007D4B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A02AAC9720F184880007D4B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A02AAC9E20F184880007D4B9;
+			remoteInfo = "Commenter Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A02AAC9F20F184880007D4B9 /* Commenter Extension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Commenter Extension.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A02AACA220F184880007D4B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A02AACA420F184880007D4B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A02AACA720F184880007D4B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A02AACA920F184880007D4B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A02AACAA20F184880007D4B9 /* Commenter_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Commenter_Extension.entitlements; sourceTree = "<group>"; };
+		A02AACAF20F184880007D4B9 /* Commenter ExtensionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Commenter ExtensionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A02AACB320F184880007D4B9 /* Commenter_ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commenter_ExtensionTests.swift; sourceTree = "<group>"; };
+		A02AACB520F184880007D4B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A02AACBA20F184880007D4B9 /* Commenter ExtensionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Commenter ExtensionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A02AACBE20F184880007D4B9 /* Commenter_ExtensionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commenter_ExtensionUITests.swift; sourceTree = "<group>"; };
+		A02AACC020F184880007D4B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A02AAC9C20F184880007D4B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A02AACAC20F184880007D4B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A02AACB720F184880007D4B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A02AAC9620F184880007D4B9 = {
+			isa = PBXGroup;
+			children = (
+				A02AACA120F184880007D4B9 /* Commenter Extension */,
+				A02AACB220F184880007D4B9 /* Commenter ExtensionTests */,
+				A02AACBD20F184880007D4B9 /* Commenter ExtensionUITests */,
+				A02AACA020F184880007D4B9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A02AACA020F184880007D4B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A02AAC9F20F184880007D4B9 /* Commenter Extension.app */,
+				A02AACAF20F184880007D4B9 /* Commenter ExtensionTests.xctest */,
+				A02AACBA20F184880007D4B9 /* Commenter ExtensionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A02AACA120F184880007D4B9 /* Commenter Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A02AACA220F184880007D4B9 /* AppDelegate.swift */,
+				A02AACA420F184880007D4B9 /* Assets.xcassets */,
+				A02AACA620F184880007D4B9 /* MainMenu.xib */,
+				A02AACA920F184880007D4B9 /* Info.plist */,
+				A02AACAA20F184880007D4B9 /* Commenter_Extension.entitlements */,
+			);
+			path = "Commenter Extension";
+			sourceTree = "<group>";
+		};
+		A02AACB220F184880007D4B9 /* Commenter ExtensionTests */ = {
+			isa = PBXGroup;
+			children = (
+				A02AACB320F184880007D4B9 /* Commenter_ExtensionTests.swift */,
+				A02AACB520F184880007D4B9 /* Info.plist */,
+			);
+			path = "Commenter ExtensionTests";
+			sourceTree = "<group>";
+		};
+		A02AACBD20F184880007D4B9 /* Commenter ExtensionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A02AACBE20F184880007D4B9 /* Commenter_ExtensionUITests.swift */,
+				A02AACC020F184880007D4B9 /* Info.plist */,
+			);
+			path = "Commenter ExtensionUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A02AAC9E20F184880007D4B9 /* Commenter Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A02AACC320F184880007D4B9 /* Build configuration list for PBXNativeTarget "Commenter Extension" */;
+			buildPhases = (
+				A02AAC9B20F184880007D4B9 /* Sources */,
+				A02AAC9C20F184880007D4B9 /* Frameworks */,
+				A02AAC9D20F184880007D4B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Commenter Extension";
+			productName = "Commenter Extension";
+			productReference = A02AAC9F20F184880007D4B9 /* Commenter Extension.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A02AACAE20F184880007D4B9 /* Commenter ExtensionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A02AACC620F184880007D4B9 /* Build configuration list for PBXNativeTarget "Commenter ExtensionTests" */;
+			buildPhases = (
+				A02AACAB20F184880007D4B9 /* Sources */,
+				A02AACAC20F184880007D4B9 /* Frameworks */,
+				A02AACAD20F184880007D4B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A02AACB120F184880007D4B9 /* PBXTargetDependency */,
+			);
+			name = "Commenter ExtensionTests";
+			productName = "Commenter ExtensionTests";
+			productReference = A02AACAF20F184880007D4B9 /* Commenter ExtensionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A02AACB920F184880007D4B9 /* Commenter ExtensionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A02AACC920F184880007D4B9 /* Build configuration list for PBXNativeTarget "Commenter ExtensionUITests" */;
+			buildPhases = (
+				A02AACB620F184880007D4B9 /* Sources */,
+				A02AACB720F184880007D4B9 /* Frameworks */,
+				A02AACB820F184880007D4B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A02AACBC20F184880007D4B9 /* PBXTargetDependency */,
+			);
+			name = "Commenter ExtensionUITests";
+			productName = "Commenter ExtensionUITests";
+			productReference = A02AACBA20F184880007D4B9 /* Commenter ExtensionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A02AAC9720F184880007D4B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Jacob Martin";
+				TargetAttributes = {
+					A02AAC9E20F184880007D4B9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A02AACAE20F184880007D4B9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A02AAC9E20F184880007D4B9;
+					};
+					A02AACB920F184880007D4B9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A02AAC9E20F184880007D4B9;
+					};
+				};
+			};
+			buildConfigurationList = A02AAC9A20F184880007D4B9 /* Build configuration list for PBXProject "Commenter Extension" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A02AAC9620F184880007D4B9;
+			productRefGroup = A02AACA020F184880007D4B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A02AAC9E20F184880007D4B9 /* Commenter Extension */,
+				A02AACAE20F184880007D4B9 /* Commenter ExtensionTests */,
+				A02AACB920F184880007D4B9 /* Commenter ExtensionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A02AAC9D20F184880007D4B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A02AACA520F184880007D4B9 /* Assets.xcassets in Resources */,
+				A02AACA820F184880007D4B9 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A02AACAD20F184880007D4B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A02AACB820F184880007D4B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A02AAC9B20F184880007D4B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A02AACA320F184880007D4B9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A02AACAB20F184880007D4B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A02AACB420F184880007D4B9 /* Commenter_ExtensionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A02AACB620F184880007D4B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A02AACBF20F184880007D4B9 /* Commenter_ExtensionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A02AACB120F184880007D4B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A02AAC9E20F184880007D4B9 /* Commenter Extension */;
+			targetProxy = A02AACB020F184880007D4B9 /* PBXContainerItemProxy */;
+		};
+		A02AACBC20F184880007D4B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A02AAC9E20F184880007D4B9 /* Commenter Extension */;
+			targetProxy = A02AACBB20F184880007D4B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A02AACA620F184880007D4B9 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A02AACA720F184880007D4B9 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A02AACC120F184880007D4B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A02AACC220F184880007D4B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		A02AACC420F184880007D4B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Commenter Extension/Commenter_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Commenter Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JJM.Commenter-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		A02AACC520F184880007D4B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Commenter Extension/Commenter_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Commenter Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JJM.Commenter-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		A02AACC720F184880007D4B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Commenter ExtensionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JJM.Commenter-ExtensionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Commenter Extension.app/Contents/MacOS/Commenter Extension";
+			};
+			name = Debug;
+		};
+		A02AACC820F184880007D4B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Commenter ExtensionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JJM.Commenter-ExtensionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Commenter Extension.app/Contents/MacOS/Commenter Extension";
+			};
+			name = Release;
+		};
+		A02AACCA20F184880007D4B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Commenter ExtensionUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JJM.Commenter-ExtensionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "Commenter Extension";
+			};
+			name = Debug;
+		};
+		A02AACCB20F184880007D4B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Commenter ExtensionUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JJM.Commenter-ExtensionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "Commenter Extension";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A02AAC9A20F184880007D4B9 /* Build configuration list for PBXProject "Commenter Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A02AACC120F184880007D4B9 /* Debug */,
+				A02AACC220F184880007D4B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A02AACC320F184880007D4B9 /* Build configuration list for PBXNativeTarget "Commenter Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A02AACC420F184880007D4B9 /* Debug */,
+				A02AACC520F184880007D4B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A02AACC620F184880007D4B9 /* Build configuration list for PBXNativeTarget "Commenter ExtensionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A02AACC720F184880007D4B9 /* Debug */,
+				A02AACC820F184880007D4B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A02AACC920F184880007D4B9 /* Build configuration list for PBXNativeTarget "Commenter ExtensionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A02AACCA20F184880007D4B9 /* Debug */,
+				A02AACCB20F184880007D4B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A02AAC9720F184880007D4B9 /* Project object */;
+}
