@@ -7,64 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A02AACA320F184880007D4B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02AACA220F184880007D4B9 /* AppDelegate.swift */; };
-		A02AACA520F184880007D4B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A02AACA420F184880007D4B9 /* Assets.xcassets */; };
-		A02AACA820F184880007D4B9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A02AACA620F184880007D4B9 /* MainMenu.xib */; };
-		A02AACB420F184880007D4B9 /* Commenter_ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02AACB320F184880007D4B9 /* Commenter_ExtensionTests.swift */; };
-		A02AACBF20F184880007D4B9 /* Commenter_ExtensionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02AACBE20F184880007D4B9 /* Commenter_ExtensionUITests.swift */; };
+		A02AACFC20F18CA40007D4B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02AACFB20F18CA40007D4B9 /* AppDelegate.swift */; };
+		A02AACFE20F18CA40007D4B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A02AACFD20F18CA40007D4B9 /* Assets.xcassets */; };
+		A02AAD0120F18CA40007D4B9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A02AACFF20F18CA40007D4B9 /* MainMenu.xib */; };
+		A02AAD2020F18D0F0007D4B9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02AACD220F184F50007D4B9 /* Cocoa.framework */; };
+		A02AAD2320F18D100007D4B9 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02AAD2220F18D100007D4B9 /* SourceEditorExtension.swift */; };
+		A02AAD2520F18D100007D4B9 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02AAD2420F18D100007D4B9 /* SourceEditorCommand.swift */; };
+		A02AAD2A20F18D100007D4B9 /* Commenter.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A02AAD1F20F18D0F0007D4B9 /* Commenter.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A02AACB020F184880007D4B9 /* PBXContainerItemProxy */ = {
+		A02AAD2820F18D100007D4B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A02AAC9720F184880007D4B9 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A02AAC9E20F184880007D4B9;
-			remoteInfo = "Commenter Extension";
-		};
-		A02AACBB20F184880007D4B9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A02AAC9720F184880007D4B9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A02AAC9E20F184880007D4B9;
-			remoteInfo = "Commenter Extension";
+			remoteGlobalIDString = A02AAD1E20F18D0F0007D4B9;
+			remoteInfo = Commenter;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A02AAD1A20F18CCB0007D4B9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A02AAD2A20F18D100007D4B9 /* Commenter.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		A02AAC9F20F184880007D4B9 /* Commenter Extension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Commenter Extension.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A02AACA220F184880007D4B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A02AACA420F184880007D4B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A02AACA720F184880007D4B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		A02AACA920F184880007D4B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A02AACAA20F184880007D4B9 /* Commenter_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Commenter_Extension.entitlements; sourceTree = "<group>"; };
-		A02AACAF20F184880007D4B9 /* Commenter ExtensionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Commenter ExtensionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A02AACB320F184880007D4B9 /* Commenter_ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commenter_ExtensionTests.swift; sourceTree = "<group>"; };
-		A02AACB520F184880007D4B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A02AACBA20F184880007D4B9 /* Commenter ExtensionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Commenter ExtensionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A02AACBE20F184880007D4B9 /* Commenter_ExtensionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commenter_ExtensionUITests.swift; sourceTree = "<group>"; };
-		A02AACC020F184880007D4B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A02AACD220F184F50007D4B9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A02AACF920F18CA40007D4B9 /* CommenterExt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommenterExt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A02AACFB20F18CA40007D4B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A02AACFD20F18CA40007D4B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A02AAD0020F18CA40007D4B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A02AAD0220F18CA40007D4B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A02AAD0320F18CA40007D4B9 /* CommenterExt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CommenterExt.entitlements; sourceTree = "<group>"; };
+		A02AAD1F20F18D0F0007D4B9 /* Commenter.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Commenter.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A02AAD2220F18D100007D4B9 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		A02AAD2420F18D100007D4B9 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		A02AAD2620F18D100007D4B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A02AAD2720F18D100007D4B9 /* Commenter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Commenter.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A02AAC9C20F184880007D4B9 /* Frameworks */ = {
+		A02AACF620F18CA40007D4B9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A02AACAC20F184880007D4B9 /* Frameworks */ = {
+		A02AAD1C20F18D0F0007D4B9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A02AACB720F184880007D4B9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				A02AAD2020F18D0F0007D4B9 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,9 +77,9 @@
 		A02AAC9620F184880007D4B9 = {
 			isa = PBXGroup;
 			children = (
-				A02AACA120F184880007D4B9 /* Commenter Extension */,
-				A02AACB220F184880007D4B9 /* Commenter ExtensionTests */,
-				A02AACBD20F184880007D4B9 /* Commenter ExtensionUITests */,
+				A02AACFA20F18CA40007D4B9 /* CommenterExt */,
+				A02AAD2120F18D100007D4B9 /* Commenter */,
+				A02AACD120F184F50007D4B9 /* Frameworks */,
 				A02AACA020F184880007D4B9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,98 +87,81 @@
 		A02AACA020F184880007D4B9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A02AAC9F20F184880007D4B9 /* Commenter Extension.app */,
-				A02AACAF20F184880007D4B9 /* Commenter ExtensionTests.xctest */,
-				A02AACBA20F184880007D4B9 /* Commenter ExtensionUITests.xctest */,
+				A02AACF920F18CA40007D4B9 /* CommenterExt.app */,
+				A02AAD1F20F18D0F0007D4B9 /* Commenter.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A02AACA120F184880007D4B9 /* Commenter Extension */ = {
+		A02AACD120F184F50007D4B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A02AACA220F184880007D4B9 /* AppDelegate.swift */,
-				A02AACA420F184880007D4B9 /* Assets.xcassets */,
-				A02AACA620F184880007D4B9 /* MainMenu.xib */,
-				A02AACA920F184880007D4B9 /* Info.plist */,
-				A02AACAA20F184880007D4B9 /* Commenter_Extension.entitlements */,
+				A02AACD220F184F50007D4B9 /* Cocoa.framework */,
 			);
-			path = "Commenter Extension";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A02AACB220F184880007D4B9 /* Commenter ExtensionTests */ = {
+		A02AACFA20F18CA40007D4B9 /* CommenterExt */ = {
 			isa = PBXGroup;
 			children = (
-				A02AACB320F184880007D4B9 /* Commenter_ExtensionTests.swift */,
-				A02AACB520F184880007D4B9 /* Info.plist */,
+				A02AACFB20F18CA40007D4B9 /* AppDelegate.swift */,
+				A02AACFD20F18CA40007D4B9 /* Assets.xcassets */,
+				A02AACFF20F18CA40007D4B9 /* MainMenu.xib */,
+				A02AAD0220F18CA40007D4B9 /* Info.plist */,
+				A02AAD0320F18CA40007D4B9 /* CommenterExt.entitlements */,
 			);
-			path = "Commenter ExtensionTests";
+			path = CommenterExt;
 			sourceTree = "<group>";
 		};
-		A02AACBD20F184880007D4B9 /* Commenter ExtensionUITests */ = {
+		A02AAD2120F18D100007D4B9 /* Commenter */ = {
 			isa = PBXGroup;
 			children = (
-				A02AACBE20F184880007D4B9 /* Commenter_ExtensionUITests.swift */,
-				A02AACC020F184880007D4B9 /* Info.plist */,
+				A02AAD2220F18D100007D4B9 /* SourceEditorExtension.swift */,
+				A02AAD2420F18D100007D4B9 /* SourceEditorCommand.swift */,
+				A02AAD2620F18D100007D4B9 /* Info.plist */,
+				A02AAD2720F18D100007D4B9 /* Commenter.entitlements */,
 			);
-			path = "Commenter ExtensionUITests";
+			path = Commenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A02AAC9E20F184880007D4B9 /* Commenter Extension */ = {
+		A02AACF820F18CA40007D4B9 /* CommenterExt */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A02AACC320F184880007D4B9 /* Build configuration list for PBXNativeTarget "Commenter Extension" */;
+			buildConfigurationList = A02AAD0420F18CA40007D4B9 /* Build configuration list for PBXNativeTarget "CommenterExt" */;
 			buildPhases = (
-				A02AAC9B20F184880007D4B9 /* Sources */,
-				A02AAC9C20F184880007D4B9 /* Frameworks */,
-				A02AAC9D20F184880007D4B9 /* Resources */,
+				A02AACF520F18CA40007D4B9 /* Sources */,
+				A02AACF620F18CA40007D4B9 /* Frameworks */,
+				A02AACF720F18CA40007D4B9 /* Resources */,
+				A02AAD1A20F18CCB0007D4B9 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A02AAD2920F18D100007D4B9 /* PBXTargetDependency */,
 			);
-			name = "Commenter Extension";
-			productName = "Commenter Extension";
-			productReference = A02AAC9F20F184880007D4B9 /* Commenter Extension.app */;
+			name = CommenterExt;
+			productName = CommenterExt;
+			productReference = A02AACF920F18CA40007D4B9 /* CommenterExt.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A02AACAE20F184880007D4B9 /* Commenter ExtensionTests */ = {
+		A02AAD1E20F18D0F0007D4B9 /* Commenter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A02AACC620F184880007D4B9 /* Build configuration list for PBXNativeTarget "Commenter ExtensionTests" */;
+			buildConfigurationList = A02AAD2B20F18D100007D4B9 /* Build configuration list for PBXNativeTarget "Commenter" */;
 			buildPhases = (
-				A02AACAB20F184880007D4B9 /* Sources */,
-				A02AACAC20F184880007D4B9 /* Frameworks */,
-				A02AACAD20F184880007D4B9 /* Resources */,
+				A02AAD1B20F18D0F0007D4B9 /* Sources */,
+				A02AAD1C20F18D0F0007D4B9 /* Frameworks */,
+				A02AAD1D20F18D0F0007D4B9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A02AACB120F184880007D4B9 /* PBXTargetDependency */,
 			);
-			name = "Commenter ExtensionTests";
-			productName = "Commenter ExtensionTests";
-			productReference = A02AACAF20F184880007D4B9 /* Commenter ExtensionTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A02AACB920F184880007D4B9 /* Commenter ExtensionUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A02AACC920F184880007D4B9 /* Build configuration list for PBXNativeTarget "Commenter ExtensionUITests" */;
-			buildPhases = (
-				A02AACB620F184880007D4B9 /* Sources */,
-				A02AACB720F184880007D4B9 /* Frameworks */,
-				A02AACB820F184880007D4B9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A02AACBC20F184880007D4B9 /* PBXTargetDependency */,
-			);
-			name = "Commenter ExtensionUITests";
-			productName = "Commenter ExtensionUITests";
-			productReference = A02AACBA20F184880007D4B9 /* Commenter ExtensionUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			name = Commenter;
+			productName = Commenter;
+			productReference = A02AAD1F20F18D0F0007D4B9 /* Commenter.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -187,19 +173,13 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Jacob Martin";
 				TargetAttributes = {
-					A02AAC9E20F184880007D4B9 = {
+					A02AACF820F18CA40007D4B9 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
-					A02AACAE20F184880007D4B9 = {
+					A02AAD1E20F18D0F0007D4B9 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
-						TestTargetID = A02AAC9E20F184880007D4B9;
-					};
-					A02AACB920F184880007D4B9 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = A02AAC9E20F184880007D4B9;
 					};
 				};
 			};
@@ -216,31 +196,23 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A02AAC9E20F184880007D4B9 /* Commenter Extension */,
-				A02AACAE20F184880007D4B9 /* Commenter ExtensionTests */,
-				A02AACB920F184880007D4B9 /* Commenter ExtensionUITests */,
+				A02AACF820F18CA40007D4B9 /* CommenterExt */,
+				A02AAD1E20F18D0F0007D4B9 /* Commenter */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A02AAC9D20F184880007D4B9 /* Resources */ = {
+		A02AACF720F18CA40007D4B9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A02AACA520F184880007D4B9 /* Assets.xcassets in Resources */,
-				A02AACA820F184880007D4B9 /* MainMenu.xib in Resources */,
+				A02AACFE20F18CA40007D4B9 /* Assets.xcassets in Resources */,
+				A02AAD0120F18CA40007D4B9 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A02AACAD20F184880007D4B9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A02AACB820F184880007D4B9 /* Resources */ = {
+		A02AAD1D20F18D0F0007D4B9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -250,50 +222,38 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A02AAC9B20F184880007D4B9 /* Sources */ = {
+		A02AACF520F18CA40007D4B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A02AACA320F184880007D4B9 /* AppDelegate.swift in Sources */,
+				A02AACFC20F18CA40007D4B9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A02AACAB20F184880007D4B9 /* Sources */ = {
+		A02AAD1B20F18D0F0007D4B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A02AACB420F184880007D4B9 /* Commenter_ExtensionTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A02AACB620F184880007D4B9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A02AACBF20F184880007D4B9 /* Commenter_ExtensionUITests.swift in Sources */,
+				A02AAD2320F18D100007D4B9 /* SourceEditorExtension.swift in Sources */,
+				A02AAD2520F18D100007D4B9 /* SourceEditorCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A02AACB120F184880007D4B9 /* PBXTargetDependency */ = {
+		A02AAD2920F18D100007D4B9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A02AAC9E20F184880007D4B9 /* Commenter Extension */;
-			targetProxy = A02AACB020F184880007D4B9 /* PBXContainerItemProxy */;
-		};
-		A02AACBC20F184880007D4B9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A02AAC9E20F184880007D4B9 /* Commenter Extension */;
-			targetProxy = A02AACBB20F184880007D4B9 /* PBXContainerItemProxy */;
+			target = A02AAD1E20F18D0F0007D4B9 /* Commenter */;
+			targetProxy = A02AAD2820F18D100007D4B9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A02AACA620F184880007D4B9 /* MainMenu.xib */ = {
+		A02AACFF20F18CA40007D4B9 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A02AACA720F184880007D4B9 /* Base */,
+				A02AAD0020F18CA40007D4B9 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -407,95 +367,73 @@
 			};
 			name = Release;
 		};
-		A02AACC420F184880007D4B9 /* Debug */ = {
+		A02AAD0520F18CA40007D4B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Commenter Extension/Commenter_Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = CommenterExt/CommenterExt.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Commenter Extension/Info.plist";
+				DEVELOPMENT_TEAM = BCYSH9FU9P;
+				INFOPLIST_FILE = CommenterExt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "JJM.Commenter-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = JJM.CommenterExt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
-		A02AACC520F184880007D4B9 /* Release */ = {
+		A02AAD0620F18CA40007D4B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Commenter Extension/Commenter_Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = CommenterExt/CommenterExt.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Commenter Extension/Info.plist";
+				DEVELOPMENT_TEAM = BCYSH9FU9P;
+				INFOPLIST_FILE = CommenterExt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "JJM.Commenter-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = JJM.CommenterExt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
-		A02AACC720F184880007D4B9 /* Debug */ = {
+		A02AAD2C20F18D100007D4B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_ENTITLEMENTS = Commenter/Commenter.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Commenter ExtensionTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "JJM.Commenter-ExtensionTests";
+				DEVELOPMENT_TEAM = BCYSH9FU9P;
+				INFOPLIST_FILE = Commenter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JJM.CommenterExt.Commenter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Commenter Extension.app/Contents/MacOS/Commenter Extension";
 			};
 			name = Debug;
 		};
-		A02AACC820F184880007D4B9 /* Release */ = {
+		A02AAD2D20F18D100007D4B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_ENTITLEMENTS = Commenter/Commenter.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Commenter ExtensionTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "JJM.Commenter-ExtensionTests";
+				DEVELOPMENT_TEAM = BCYSH9FU9P;
+				INFOPLIST_FILE = Commenter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JJM.CommenterExt.Commenter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Commenter Extension.app/Contents/MacOS/Commenter Extension";
-			};
-			name = Release;
-		};
-		A02AACCA20F184880007D4B9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Commenter ExtensionUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "JJM.Commenter-ExtensionUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = "Commenter Extension";
-			};
-			name = Debug;
-		};
-		A02AACCB20F184880007D4B9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Commenter ExtensionUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "JJM.Commenter-ExtensionUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = "Commenter Extension";
 			};
 			name = Release;
 		};
@@ -511,29 +449,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A02AACC320F184880007D4B9 /* Build configuration list for PBXNativeTarget "Commenter Extension" */ = {
+		A02AAD0420F18CA40007D4B9 /* Build configuration list for PBXNativeTarget "CommenterExt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A02AACC420F184880007D4B9 /* Debug */,
-				A02AACC520F184880007D4B9 /* Release */,
+				A02AAD0520F18CA40007D4B9 /* Debug */,
+				A02AAD0620F18CA40007D4B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A02AACC620F184880007D4B9 /* Build configuration list for PBXNativeTarget "Commenter ExtensionTests" */ = {
+		A02AAD2B20F18D100007D4B9 /* Build configuration list for PBXNativeTarget "Commenter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A02AACC720F184880007D4B9 /* Debug */,
-				A02AACC820F184880007D4B9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A02AACC920F184880007D4B9 /* Build configuration list for PBXNativeTarget "Commenter ExtensionUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A02AACCA20F184880007D4B9 /* Debug */,
-				A02AACCB20F184880007D4B9 /* Release */,
+				A02AAD2C20F18D100007D4B9 /* Debug */,
+				A02AAD2D20F18D100007D4B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

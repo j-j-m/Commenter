@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Commenter Extension
+//  CommenterExt
 //
 //  Created by Jacob Martin on 7/7/18.
 //  Copyright © 2018 Jacob Martin. All rights reserved.
