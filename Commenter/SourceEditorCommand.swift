@@ -25,14 +25,32 @@ extension Array {
     }
 }
 
+extension String {
+    var leadingEmptyRegion: String {
+        do {
+            let regex = try NSRegularExpression(pattern: " *", options: NSRegularExpression.Options.caseInsensitive)
+            guard let r = regex.firstMatch(in: self, options: [], range: NSMakeRange(0, self.count))?.range,
+                let range = Range(r, in: self) else {
+                    return ""
+            }
+            
+            return String(self[range])
+        } catch {
+            return ""
+        }
+    }
+}
+
 // MARK: - Source Editor Command
 class SourceEditorCommand: NSObject, XCSourceEditorCommand {
     
     fileprivate func augmentSingleLine(_ invocation: XCSourceEditorCommandInvocation, _ start: Int) {
-        let s = invocation.buffer.lines[start] as! String
-        invocation.buffer.lines[start] = s.replacingOccurrences(of: "///", with: "")
-        invocation.buffer.lines.insert("*/", at: start + 1)
-        invocation.buffer.lines.insert("/**", at: start)
+        if let s = invocation.buffer.lines[start] as? String {
+            let indentation = s.leadingEmptyRegion
+            invocation.buffer.lines[start] = s.replacingOccurrences(of: "///", with: "")
+            invocation.buffer.lines.insert(indentation + "*/", at: start + 1)
+            invocation.buffer.lines.insert(indentation + "/**", at: start)
+        }
     }
     
     fileprivate func augmentBlock(_ start: Int, _ lastCommentLine: Int, _ invocation: XCSourceEditorCommandInvocation) {
@@ -49,9 +67,13 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
         range.forEach {
             invocation.buffer.lines[$0] = mapped.dequeue()
         }
-        if let end = rangeArray.last {
-            invocation.buffer.lines.insert("*/", at: end)
-            invocation.buffer.lines.insert("/**", at: start)
+        if let end = rangeArray.last,
+            let line = invocation.buffer.lines[end] as? String {
+            
+            let indentation = line.leadingEmptyRegion
+            
+            invocation.buffer.lines.insert(indentation + "*/", at: end)
+            invocation.buffer.lines.insert(indentation + "/**", at: start)
         }
     }
     
@@ -63,10 +85,15 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
             
             var currentStart: Int?
             
+            guard let regex = try? NSRegularExpression(pattern: "///", options: NSRegularExpression.Options.caseInsensitive) else {
+               return
+            }
+            
             while lastCommentLine < invocation.buffer.lines.count {
                 let currentLine = invocation.buffer.lines[lastCommentLine] as! String
                 
-                if currentLine.hasPrefix("///") {
+                let matchCount = regex.numberOfMatches(in: currentLine, options: [], range: NSMakeRange(0, currentLine.count))
+                if matchCount > 0 {
                     
                     if currentStart == nil {
                         currentStart = lastCommentLine
