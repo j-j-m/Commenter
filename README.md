@@ -1,5 +1,5 @@
 # Commenter
-Xcode source editor extension to convert headerdocs from "///" to "/** ... */" format and vice-versa. 
+Xcode source editor extension to convert headerdocs from "///" to "/** ... */" format and vice versa. 
 
 
 ## Installation 
