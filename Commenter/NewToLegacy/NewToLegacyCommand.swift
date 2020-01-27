@@ -1,48 +1,16 @@
 //
-//  SourceEditorCommand.swift
+//  NewToLegacyCommand.swift
 //  Commenter
 //
-//  Created by Jacob Martin on 7/7/18.
-//  Copyright © 2018 Jacob Martin. All rights reserved.
+//  Created by Jacob Martin on 1/26/20.
+//  Copyright © 2020 Jacob Martin. All rights reserved.
 //
 
 import Foundation
 import XcodeKit
 
-// MARK: - Array Queue Extension
-extension Array {
-    
-    mutating func enqueue(newElement: Element) {
-        self.append(newElement)
-    }
-    
-    mutating func dequeue() -> Element? {
-        return self.remove(at: 0)
-    }
-    
-    func peekAtQueue() -> Element? {
-        return self.first
-    }
-}
-
-extension String {
-    var leadingEmptyRegion: String {
-        do {
-            let regex = try NSRegularExpression(pattern: " *", options: NSRegularExpression.Options.caseInsensitive)
-            guard let r = regex.firstMatch(in: self, options: [], range: NSMakeRange(0, self.count))?.range,
-                let range = Range(r, in: self) else {
-                    return ""
-            }
-            
-            return String(self[range])
-        } catch {
-            return ""
-        }
-    }
-}
-
 // MARK: - Source Editor Command
-class SourceEditorCommand: NSObject, XCSourceEditorCommand {
+class NewToLegacyCommand: NSObject, XCSourceEditorCommand {
     
     fileprivate func augmentSingleLine(_ invocation: XCSourceEditorCommandInvocation, _ start: Int) {
         if let s = invocation.buffer.lines[start] as? String {
@@ -79,7 +47,7 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
     
     func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void ) -> Void {
         
-        if invocation.commandIdentifier.contains("FormatMarkdown") {
+        if invocation.commandIdentifier.contains("NewToLegacy") {
             
             var lastCommentLine = 0
             

@@ -30,11 +30,19 @@
 			<array>
 				<dict>
 					<key>XCSourceEditorCommandClassName</key>
-					<string>$(PRODUCT_MODULE_NAME).SourceEditorCommand</string>
+					<string>$(PRODUCT_MODULE_NAME).LegacyToNewCommand</string>
 					<key>XCSourceEditorCommandIdentifier</key>
-					<string>$(PRODUCT_BUNDLE_IDENTIFIER).FormatMarkdown</string>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).LegacyToNewMarkdown</string>
 					<key>XCSourceEditorCommandName</key>
-					<string>Format Markdown</string>
+					<string>Format /*...*/ to ///  </string>
+				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).NewToLegacyCommand</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).NewToLegacy</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>Format /// to /*...*/ </string>
 				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
